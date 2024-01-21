@@ -1,0 +1,27 @@
+<mat-card>
+  <form class="loginForm" [formGroup]="loginForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        type="email"
+        formControlName="email"
+        placeholder="Enter your email"
+      />
+    </mat-form-field>
+    <br />
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        type="password"
+        formControlName="password"
+        placeholder="Enter your password"
+      />
+    </mat-form-field>
+    <br />
+    <button mat-raised-button color="accent" (click)="submitForm()">
+      Login
+    </button>
+  </form>
+</mat-card>
