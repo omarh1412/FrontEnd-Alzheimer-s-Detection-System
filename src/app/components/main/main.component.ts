@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-main',
@@ -10,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
   styleUrl: './main.component.scss',
 })
 export class MainComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private location: Location) {}
 
   goToReviewTrial() {
     this.router.navigate(['/review-trial']);
