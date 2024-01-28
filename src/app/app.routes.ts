@@ -5,7 +5,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { MainComponent } from './components/main/main.component';
 import { ReviewTrailComponent } from './components/review-trail/review-trail.component';
 import { PerfomTrailComponent } from './components/perfom-trail/perfom-trail.component';
-import { InstructionsComponent } from '../../component/instructions/instructions.component';
+import { InstructionsComponent } from './components/instructions/instructions.component';
 export const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },

@@ -19,4 +19,7 @@ export class MainComponent {
   goToPerfomTrial() {
     this.router.navigate(['/perfom-trial']);
   }
+  goToInstructions(){
+    this.router.navigate(["/instructions"])
+  }
 }
