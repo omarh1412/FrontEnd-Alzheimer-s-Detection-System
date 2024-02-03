@@ -6,6 +6,7 @@ import { MainComponent } from './components/main/main.component';
 import { ReviewTrailComponent } from './components/review-trail/review-trail.component';
 import { PerfomTrailComponent } from './components/perfom-trail/perfom-trail.component';
 import { InstructionsComponent } from './components/instructions/instructions.component';
+import { ReviewModelsComponent } from './components/review-models/review-models.component';
 export const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
@@ -17,5 +18,9 @@ export const routes: Routes = [
   {
     path: "instructions",
     component : InstructionsComponent
+  },
+  { 
+    path: "review-models",
+    component: ReviewModelsComponent
   }
 ];

@@ -22,4 +22,8 @@ export class MainComponent {
   goToInstructions(){
     this.router.navigate(["/instructions"])
   }
+  goToReviewModels(){
+    this.router.navigate(["/review-models"])
+  }
+
 }
