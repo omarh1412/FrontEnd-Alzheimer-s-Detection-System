@@ -7,6 +7,7 @@ import { ReviewTrailComponent } from './components/review-trail/review-trail.com
 import { PerfomTrailComponent } from './components/perfom-trail/perfom-trail.component';
 import { InstructionsComponent } from './components/instructions/instructions.component';
 import { ReviewModelsComponent } from './components/review-models/review-models.component';
+import { ClinicianPageComponent } from './components/clinician-page/clinician-page.component';
 export const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
@@ -22,5 +23,9 @@ export const routes: Routes = [
   { 
     path: "review-models",
     component: ReviewModelsComponent
+  },
+  { 
+    path: "clinician-page",
+    component: ClinicianPageComponent
   }
 ];

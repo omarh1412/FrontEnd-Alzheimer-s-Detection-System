@@ -25,5 +25,8 @@ export class MainComponent {
   goToReviewModels(){
     this.router.navigate(["/review-models"])
   }
+  goToClinicianPage(){
+    this.router.navigate(["/clinician-page"])
+  }
 
 }
