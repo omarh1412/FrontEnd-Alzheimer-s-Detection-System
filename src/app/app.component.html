@@ -1,7 +1,9 @@
 <div class="container">
-  <mat-toolbar color="primary">
-    <span>Alzheimer's Detection Using SmartPhone Cameras & AI</span>
-  </mat-toolbar>
-
+  <div class="header">
+    <mat-toolbar color="primary">
+      <span>Alzheimer's Detection Using SmartPhone Cameras & AI</span>
+    </mat-toolbar>
+    @if(showHeader){<button (click)="logout()">logout</button>}
+  </div>
   <router-outlet></router-outlet>
 </div>

@@ -1,0 +1,61 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifycc2384309d804-staging-12749-authRole",
+      "UnauthRoleArn": "arn:aws:iam::298516394167:role/amplify-amplifycc2384309d804-staging-12749-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::298516394167:role/amplify-amplifycc2384309d804-staging-12749-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplifycc2384309d804-staging-12749-deployment",
+      "UnauthRoleName": "amplify-amplifycc2384309d804-staging-12749-unauthRole",
+      "StackName": "amplify-amplifycc2384309d804-staging-12749",
+      "StackId": "arn:aws:cloudformation:us-east-2:298516394167:stack/amplify-amplifycc2384309d804-staging-12749/459ef5d0-c621-11ee-9c38-0abf5084adf9",
+      "AmplifyAppId": "djtmxjhsgukuu"
+    }
+  },
+  "auth": {
+    "FrontEndAlzheimersDetectionSystem": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "signupAttributes": [],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "us-east-2_jB44Z57Hf",
+        "AppClientIDWeb": "409bf96u8q6jlum3of0v0np2ai",
+        "AppClientID": "1ibm7fppm9dh8q2bpfncuijqbf",
+        "IdentityPoolId": "us-east-2:362818bc-9a12-4988-9a01-fc87c37508e5",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:298516394167:userpool/us-east-2_jB44Z57Hf",
+        "IdentityPoolName": "testAuthIdentityPool__staging",
+        "UserPoolName": "FrontEndAlzheimersDetectionSystem"
+      },
+      "lastPushTimeStamp": "2024-02-08T03:17:05.703Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifycc2384309d804-staging-12749-deployment/amplify-cfn-templates/auth/FrontEndAlzheimersDetectionSystem-cloudformation-template.json",
+        "logicalId": "authFrontEndAlzheimersDetectionSystem"
+      },
+      "lastPushDirHash": "tEvFfqRQOpGXsFcvDSkppLil2Is="
+    }
+  }
+}
