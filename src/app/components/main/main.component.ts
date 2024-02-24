@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { Location } from '@angular/common';
 
@@ -11,22 +11,34 @@ import { Location } from '@angular/common';
   styleUrl: './main.component.scss',
 })
 export class MainComponent {
-  constructor(private router: Router, private location: Location) {}
+  constructor(
+    private router: Router,
+    private location: Location,
+    private route: ActivatedRoute
+  ) {}
 
+  userEmail: string = '';
+
+  ngOnInit() {
+    this.route.queryParams.subscribe((params) => {
+      let value = params['username']; // value is 'value'
+      //console.log('hii..', value);
+      this.userEmail = value;
+    });
+  }
   goToReviewTrial() {
     this.router.navigate(['/review-trial']);
   }
   goToPerfomTrial() {
     this.router.navigate(['/perfom-trial']);
   }
-  goToInstructions(){
-    this.router.navigate(["/instructions"])
+  goToInstructions() {
+    this.router.navigate(['/instructions']);
   }
-  goToReviewModels(){
-    this.router.navigate(["/review-models"])
+  goToReviewModels() {
+    this.router.navigate(['/review-models']);
   }
-  goToClinicianPage(){
-    this.router.navigate(["/clinician-page"])
+  goToClinicianPage() {
+    this.router.navigate(['/clinician-page']);
   }
-
 }

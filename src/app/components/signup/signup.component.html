@@ -1,5 +1,5 @@
 <mat-card>
-  <form class="loginForm" [formGroup]="loginForm">
+  <form class="loginForm" [formGroup]="signUpForm">
     <h1>Create a new account</h1>
 
     <mat-form-field appearance="fill">
@@ -11,6 +11,9 @@
         placeholder="Enter your email"
       />
     </mat-form-field>
+    @if (signUpForm.controls['email'].errors ) {
+    <div class="error">* Invalid Email Format</div>
+    }
     <br />
     <mat-form-field appearance="fill">
       <mat-label>Password</mat-label>
@@ -21,7 +24,20 @@
         placeholder="Enter your password"
       />
     </mat-form-field>
+
+    @if (passwordErros.lowercase) {
+    <div class="error">* Password must have lowercase characters</div>
+    } @if (passwordErros.uppercase) {
+    <div class="error">* Password must have uppercase characters</div>
+    } @if (passwordErros.specialCharacter) {
+    <div class="error">* Password must have special characters</div>
+    } @if (passwordErros.numericCharacter) {
+    <div class="error">* Password must have numeric characters</div>
+    }
     <br />
+
+    <p>Already a member? <a href="/login">Log In</a></p>
+
     <button mat-raised-button color="accent" (click)="submitForm()">
       Create Account
     </button>

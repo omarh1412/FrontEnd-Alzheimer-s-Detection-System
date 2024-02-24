@@ -8,24 +8,29 @@ import { PerfomTrailComponent } from './components/perfom-trail/perfom-trail.com
 import { InstructionsComponent } from './components/instructions/instructions.component';
 import { ReviewModelsComponent } from './components/review-models/review-models.component';
 import { ClinicianPageComponent } from './components/clinician-page/clinician-page.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { VideoComponent } from './video/video.component';
 export const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
+  { path: 'confirmation', component: ConfirmationComponent },
+  { path: 'video', component: VideoComponent },
+
   { path: 'main', component: MainComponent },
   { path: 'thankyou', component: ThankyouComponent },
   { path: 'review-trial', component: ReviewTrailComponent },
   { path: 'perfom-trial', component: PerfomTrailComponent },
   {
-    path: "instructions",
-    component : InstructionsComponent
+    path: 'instructions',
+    component: InstructionsComponent,
   },
-  { 
-    path: "review-models",
-    component: ReviewModelsComponent
+  {
+    path: 'review-models',
+    component: ReviewModelsComponent,
   },
-  { 
-    path: "clinician-page",
-    component: ClinicianPageComponent
-  }
+  {
+    path: 'clinician-page',
+    component: ClinicianPageComponent,
+  },
 ];

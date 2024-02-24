@@ -15,4 +15,7 @@ export class PerfomTrailComponent {
   goBack() {
     this.location.back();
   }
+  perfomTrials() {
+    this.router.navigate(['/video']);
+  }
 }
