@@ -22,7 +22,6 @@ export class MainComponent {
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
       let value = params['username']; // value is 'value'
-      //console.log('hii..', value);
       this.userEmail = value;
     });
   }
