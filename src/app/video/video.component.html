@@ -1,8 +1,9 @@
-<p>video works!</p>
-<button mat-raised-button color="accent" (click)="recordVideo()">
+<video #videoElement width="720" height="560" autoplay></video>
+<br />
+<button mat-raised-button color="accent" (click)="startRecording()">
   Record Video
 </button>
 
-<button mat-raised-button color="accent" (click)="submitVideo()">
+<button mat-raised-button color="accent" (click)="stopRecording()">
   Upload video to AI model.
 </button>
