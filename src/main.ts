@@ -5,13 +5,7 @@ import * as AWS from 'aws-sdk';
 import { CookieStorage } from 'aws-amplify/utils';
 import { Amplify, ResourcesConfig } from 'aws-amplify';
 import { cognitoUserPoolsTokenProvider } from 'aws-amplify/auth/cognito';
-// const credentials = new AWS.Credentials({
-//   accessKeyId: 'AKIA4FJVHHY73BASTLHB',
-//   secretAccessKey: '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',
-// });
 
-// // Update the AWS SDK configuration
-// AWS.config.update({ credentials });
 const config = {
   Auth: {
     Cognito: {
