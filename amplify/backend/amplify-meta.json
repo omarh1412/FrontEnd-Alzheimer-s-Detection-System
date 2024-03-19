@@ -42,20 +42,33 @@
       "providerPlugin": "awscloudformation",
       "service": "Cognito",
       "output": {
-        "UserPoolId": "us-east-2_jB44Z57Hf",
-        "AppClientIDWeb": "409bf96u8q6jlum3of0v0np2ai",
-        "AppClientID": "1ibm7fppm9dh8q2bpfncuijqbf",
-        "IdentityPoolId": "us-east-2:362818bc-9a12-4988-9a01-fc87c37508e5",
-        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:298516394167:userpool/us-east-2_jB44Z57Hf",
+        "UserPoolId": "us-east-2_3xGks7Pum",
+        "AppClientIDWeb": "4k8k15ukraa51d9fo0shu2dgbg",
+        "AppClientID": "2rpcv9i2qdfopeg7i73k1ti74m",
+        "IdentityPoolId": "us-east-2:cae21637-6a79-4511-9e0f-3b8bb7ca37fd",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-2:298516394167:userpool/us-east-2_3xGks7Pum",
         "IdentityPoolName": "testAuthIdentityPool__staging",
         "UserPoolName": "FrontEndAlzheimersDetectionSystem"
       },
-      "lastPushTimeStamp": "2024-02-08T03:17:05.703Z",
+      "lastPushTimeStamp": "2024-03-17T16:48:57.173Z",
       "providerMetadata": {
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifycc2384309d804-staging-12749-deployment/amplify-cfn-templates/auth/FrontEndAlzheimersDetectionSystem-cloudformation-template.json",
         "logicalId": "authFrontEndAlzheimersDetectionSystem"
       },
-      "lastPushDirHash": "tEvFfqRQOpGXsFcvDSkppLil2Is="
+      "lastPushDirHash": "bGA+c2TsmE5sSx3KxPQDdh+sEmM="
+    }
+  },
+  "storage": {
+    "frontendalzheimersde57f62b81": {
+      "service": "S3",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "BucketName": "awareminduservide200601-staging",
+        "Region": "us-east-2"
+      },
+      "lastPushTimeStamp": "2024-03-09T21:38:16.666Z"
     }
   }
 }

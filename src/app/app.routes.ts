@@ -10,6 +10,7 @@ import { ReviewModelsComponent } from './components/review-models/review-models.
 import { ClinicianPageComponent } from './components/clinician-page/clinician-page.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { VideoComponent } from './video/video.component';
+import { ResultPageComponent } from './result-page/result-page.component';
 export const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
@@ -17,6 +18,7 @@ export const routes: Routes = [
   { path: 'confirmation', component: ConfirmationComponent },
   { path: 'video', component: VideoComponent },
 
+  { path: 'result-page', component: ResultPageComponent },
   { path: 'main', component: MainComponent },
   { path: 'thankyou', component: ThankyouComponent },
   { path: 'review-trial', component: ReviewTrailComponent },

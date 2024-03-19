@@ -22,12 +22,14 @@ export class MainComponent {
   ngOnInit() {
     this.route.queryParams.subscribe((params) => {
       let value = params['username']; // value is 'value'
-      //console.log('hii..', value);
       this.userEmail = value;
     });
   }
   goToReviewTrial() {
     this.router.navigate(['/review-trial']);
+  }
+  goToResultPage() {
+    this.router.navigate(['/result-page']);
   }
   goToPerfomTrial() {
     this.router.navigate(['/perfom-trial']);

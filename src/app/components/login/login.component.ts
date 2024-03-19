@@ -57,6 +57,14 @@ export class LoginComponent {
           });
         // take to confirmation page.. to confirm the email
       }
+      switch (nextStep.signInStep) {
+        case 'CONFIRM_SIGN_IN_WITH_NEW_PASSWORD_REQUIRED':
+          ///  console.log('needs to confirm');
+          this.router.navigate(['/confirmation'], {
+            queryParams: { username: username },
+          });
+        // take to confirmation page.. to confirm the email
+      }
 
       if (isSignedIn) {
         this.router.navigate(['/main'], {
