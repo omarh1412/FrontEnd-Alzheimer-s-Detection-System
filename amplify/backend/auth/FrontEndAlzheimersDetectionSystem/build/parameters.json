@@ -1,7 +1,7 @@
 {
   "identityPoolName": "testAuthIdentityPool",
   "allowUnauthenticatedIdentities": false,
-  "resourceNameTruncated": "fronte3ba0caec",
+  "resourceNameTruncated": "fronte1714900b",
   "userPoolName": "FrontEndAlzheimersDetectionSystem",
   "autoVerifiedAttributes": [
     "email"
@@ -28,9 +28,9 @@
   "userpoolClientRefreshTokenValidity": 30,
   "userpoolClientWriteAttributes": [],
   "userpoolClientReadAttributes": [],
-  "userpoolClientLambdaRole": "FrontE3ba0caec_userpoolclient_lambda_role",
+  "userpoolClientLambdaRole": "FrontE1714900b_userpoolclient_lambda_role",
   "userpoolClientSetAttributes": false,
-  "sharedId": "3ba0caec",
+  "sharedId": "1714900b",
   "resourceName": "FrontEndAlzheimersDetectionSystem",
   "authSelections": "identityPoolAndUserPool",
   "serviceName": "Cognito",

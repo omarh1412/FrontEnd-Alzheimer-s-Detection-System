@@ -204,7 +204,7 @@
         "UserPoolId": {
           "Ref": "UserPool"
         },
-        "ClientName": "fronte3ba0caec_app_clientWeb",
+        "ClientName": "fronte1714900b_app_clientWeb",
         "RefreshTokenValidity": {
           "Ref": "userpoolClientRefreshTokenValidity"
         },
@@ -222,7 +222,7 @@
         "UserPoolId": {
           "Ref": "UserPool"
         },
-        "ClientName": "fronte3ba0caec_app_client",
+        "ClientName": "fronte1714900b_app_client",
         "GenerateSecret": {
           "Ref": "userpoolClientGenerateSecret"
         },
@@ -262,7 +262,7 @@
               "Fn::Join": [
                 "",
                 [
-                  "upClientLambdaRole3ba0caec",
+                  "upClientLambdaRole1714900b",
                   {
                     "Fn::Select": [
                       3,

@@ -28,6 +28,9 @@ export class MainComponent {
   goToReviewTrial() {
     this.router.navigate(['/review-trial']);
   }
+  goToResultPage() {
+    this.router.navigate(['/result-page']);
+  }
   goToPerfomTrial() {
     this.router.navigate(['/perfom-trial']);
   }
