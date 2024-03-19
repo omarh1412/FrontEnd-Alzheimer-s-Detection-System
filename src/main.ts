@@ -24,10 +24,6 @@ const config = {
       bucket: 'testawaremindc4028b5e722a4315847098b252d1bf1000648-staging',
       region: 'us-east-1', // Replace with your region
       identityPoolId: 'us-east-1:ddc93f1d-ee5d-4981-b38e-f84fb6cd39b1', // If using Cognito
-      credentials: {
-        accessKeyId: 'AKIA4FJVHHY73BASTLHB',
-        secretAccessKey: 'HGWn4CrdosTtQwYQBbyt1to3WRAGW3tjVfcCLmNT',
-      },
     },
   },
 };
