@@ -38,6 +38,7 @@ import { getCurrentUser } from 'aws-amplify/auth';
 export class SignupComponent {
   constructor(private fb: FormBuilder, private router: Router) {}
 
+  errorMessage: String = '';
   signUpForm = this.fb.group({
     email: ['', Validators.email],
     password: [
@@ -124,19 +125,16 @@ export class SignupComponent {
         this.router.navigate(['/confirmation'], {
           queryParams: { username: email },
         });
-
-        // try {
-        //   const { username, userId, signInDetails } = await getCurrentUser();
-        //   console.log(`The username: ${username}`);
-        //   console.log(`The userId: ${userId}`);
-        //   console.log(`The signInDetails: ${signInDetails}`);
-        // } catch (err) {
-        //   console.log(err);
-        // }
       }
     } catch (error: any) {
       console.log(error);
       console.log('error signing up:', error.toString());
+
+      if (error.toString().includes('UsernameExistsException')) {
+        // alert('user not found');
+        this.errorMessage =
+          'An account with the given email already exists. Try using different Email.';
+      }
     }
     // this.router.navigate(['/thankyou']);
   }

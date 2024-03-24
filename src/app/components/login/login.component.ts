@@ -42,6 +42,7 @@ export class LoginComponent {
     password: ['', [Validators.required, Validators.minLength(8)]],
   });
 
+  errorMessage: String = '';
   async submitForm() {
     console.log(this.loginForm.value);
     const username = this.loginForm.value.email!;
@@ -71,8 +72,21 @@ export class LoginComponent {
           queryParams: { username: username },
         });
       }
-    } catch (error) {
+    } catch (error: any) {
       console.log('error signing in', error);
+      if (error.toString().includes('UserNotFoundException')) {
+        // alert('user not found');
+        this.errorMessage = ' User Not Found. Please Create a new account.';
+      }
+      if (error.toString().includes('NotAuthorizedException')) {
+        // alert('user not found');
+        this.errorMessage = ' Incorrect Username or Password';
+      }
+      if (error.toString().includes('UserAlreadyAuthenticatedException')) {
+        // alert('user not found');
+        this.errorMessage =
+          'User Already Signed In. Please logout from the current session.';
+      }
     }
   }
 }

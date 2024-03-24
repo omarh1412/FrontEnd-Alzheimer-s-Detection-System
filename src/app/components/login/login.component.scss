@@ -1,17 +1,14 @@
-.example-form {
-  min-width: 150px;
-  max-width: 500px;
-  width: 100%;
-}
-
-.example-full-width {
-  width: 100%;
-}
-
 .loginForm {
-  width: 500px;
+  min-width: 400px;
   padding: 10px;
   margin: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .loginForm {
+    min-width: 100%; /* Make width 100% to fit the screen */
+    box-sizing: border-box; /* This ensures padding is included in the width */
+  }
 }
 .mat-mdc-form-field {
   width: 100%;
