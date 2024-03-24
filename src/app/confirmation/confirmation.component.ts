@@ -12,6 +12,7 @@ import {
   confirmSignUp,
   type ConfirmSignUpInput,
 } from 'aws-amplify/auth';
+import { autoSignIn } from 'aws-amplify/auth';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
@@ -57,6 +58,21 @@ export class ConfirmationComponent {
     });
   }
 
+  async handleAutoSignIn() {
+    try {
+      const signInOutput = await autoSignIn();
+      console.log(signInOutput);
+      console.log(this.userEmail);
+
+      this.router.navigate(['/main'], {
+        queryParams: { username: this.userEmail },
+      });
+      // handle sign-in steps
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   confirmationForm = this.fb.group({
     confirmationCode: ['', Validators.required],
   });
@@ -78,6 +94,10 @@ export class ConfirmationComponent {
       switch (nextStep.signUpStep) {
         case 'DONE':
           this.router.navigate(['/main']);
+          break;
+        case 'COMPLETE_AUTO_SIGN_IN':
+          this.handleAutoSignIn();
+          break;
 
         // take to confirmation page.. to confirm the email
       }
