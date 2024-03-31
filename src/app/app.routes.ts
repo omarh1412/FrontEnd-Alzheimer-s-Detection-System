@@ -11,13 +11,14 @@ import { ClinicianPageComponent } from './components/clinician-page/clinician-pa
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { VideoComponent } from './video/video.component';
 import { ResultPageComponent } from './result-page/result-page.component';
+import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
 export const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'confirmation', component: ConfirmationComponent },
   { path: 'video', component: VideoComponent },
-
+  { path: 'forgetpassword', component: ForgetpasswordComponent },
   { path: 'result-page', component: ResultPageComponent },
   { path: 'main', component: MainComponent },
   { path: 'thankyou', component: ThankyouComponent },
