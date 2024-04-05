@@ -43,4 +43,10 @@ export class MainComponent {
   goToClinicianPage() {
     this.router.navigate(['/clinician-page']);
   }
+  goToReviewPage() {
+    this.router.navigate(['/review-page']);
+  }
+  goToContactUsPage() {
+    this.router.navigate(['/contact-us']);
+  }
 }

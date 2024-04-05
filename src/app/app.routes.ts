@@ -12,6 +12,8 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { VideoComponent } from './video/video.component';
 import { ResultPageComponent } from './result-page/result-page.component';
 import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+import { ReviewPageComponent } from './components/review-page/review-page.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 export const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
@@ -35,5 +37,13 @@ export const routes: Routes = [
   {
     path: 'clinician-page',
     component: ClinicianPageComponent,
+  },
+  {
+    path: 'review-page',
+    component: ReviewPageComponent,
+  },
+  {
+    path: 'contact-us',
+    component: ContactUsComponent,
   },
 ];

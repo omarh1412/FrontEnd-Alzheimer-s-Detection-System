@@ -1,0 +1,16 @@
+/* Add your styles here */
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    margin-right: 5px;
+  }
+  
+  /* Add some styling to highlight the selected rating */
+  button.selected {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
