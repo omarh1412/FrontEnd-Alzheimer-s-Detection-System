@@ -1,0 +1,18 @@
+
+<form class="opinionForm" [formGroup]="opinionForm">
+<div>
+    <h2>Leave Your Feedback</h2>
+    <textarea  formControlName="opinion" rows="4" cols="50" placeholder="Write your opinion here..."></textarea>
+    <div>
+      <label>Rate your experience:</label>
+      <button (click)="rating=1">1</button>
+      <button (click)="rating=2">2</button>
+      <button (click)="rating=3">3</button>
+      <button (click)="rating=4">4</button>
+      <button (click)="rating=5">5</button>
+  
+    </div>
+    <p>Your rating: {{ rating }}</p>
+    <button (click)="submitFeedback()">Submit Feedback</button>
+  </div>
+</form>

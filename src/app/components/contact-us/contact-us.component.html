@@ -1,0 +1,9 @@
+
+<form class="contactUsForm" [formGroup]="contactUsForm">
+    <div>
+        <h2>Write Your Email</h2>
+        <textarea  formControlName="email" rows="4" cols="50" placeholder="Write your email here..."></textarea>
+        </div>
+        <button (click)="sendEmail()">Send Email</button>
+     
+</form>
